@@ -17,7 +17,7 @@ import static javax.transaction.Transactional.TxType.REQUIRED;
 
 @Transactional
 public class ProductoRepository {
-
+	
 	@PersistenceContext
 	private EntityManager emEntityManager;
 	
@@ -55,5 +55,5 @@ public class ProductoRepository {
 	    public void delete(@NotNull Long id) {
 	    	emEntityManager.remove(emEntityManager.getReference(Producto.class, id));
 	    }
-	
+
 }

@@ -11,12 +11,13 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.Past;
+import javax.validation.constraints.Past; 
 
 @Entity
 @ApiModel(description = "Prductos Hulk Store ")
 public class Producto {
 	
+
 	@Id
     @GeneratedValue
     @ApiModelProperty("identificador")
@@ -72,6 +73,8 @@ public class Producto {
         this.imageURL = imageURL;
         this.descripcion = descripcion;
     }
+    
+    public Producto () {}
 
 	public Long getId() {
 		return id;
@@ -147,7 +150,7 @@ public class Producto {
 	
 	@Override
     public String toString() {
-        return "Book{" +
+        return "Producto{" +
             "id=" + id +
             ", title='" + nombre + '\'' +
             ", description='" + descripcion + '\'' +

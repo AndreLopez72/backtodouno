@@ -2,7 +2,7 @@ package com.todouno.util;
 
 import java.util.Random;
 
-public class  IsbnGenerator implements NumberGenerator {
+public class IsbnGenerator implements NumberGenerator {
 
 	@Override
     public String generarNumero() {
